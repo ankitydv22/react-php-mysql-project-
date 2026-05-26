@@ -5,7 +5,7 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api.php")
+    fetch("https://eb16b3c927de-10-244-6-102-3000.papa.r.killercoda.com/api.php")
       .then(r => r.json())
       .then(data => {
         if (data.error) setError(data.error);
